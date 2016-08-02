@@ -1,0 +1,9 @@
+{
+    "elements": {
+        "template": {}
+    },
+    "attributes": {
+        "v-for": {},
+        "id": {}
+    }
+}
