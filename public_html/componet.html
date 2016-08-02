@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="list">
+            <c-ul v-bind:nums="datanums"></c-ul>
+        </div>
+
+
+        <template id="c-ul">
+            <ul>
+                <li v-for="num in nums">
+                    {{num.text}}
+                </li>
+            </ul>
+        </template>
+        <script src="js/libs/vue.js"></script>
+        <script src="js/apps/componet.js"></script>
+    </body>
+</html>
