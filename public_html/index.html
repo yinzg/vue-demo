@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id="container">
+        </section>
+
+        <script src="js/libs/jquery.3.1.0.min.js"></script>
+        <!--<script src="js/libs/require.js" data-main="js/main"></script>-->
+
+        <script>
+            $(function () {
+                loader("t1");
+            });
+
+            var loader = function (view) {
+//    $.get("test/" + view + ".html", function (data, status, xhr) {
+//
+//    });
+                $.ajax({
+                    async: true,
+                    type: 'GET',
+                    url: "test/" + view + ".html",
+                    success: function (data, status, jqXHR) {
+                        if (status === 200) {
+                            $("#container").html("<div>test loader</div>");
+                        }
+                    }
+                });
+            };
+        </script>
+    </body>
+</html>
