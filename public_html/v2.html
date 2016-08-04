@@ -6,12 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div v-if="Math.random() > 0.5">
-            Sorry
-        </div>
-        <div v-else>
-            Not sorry
-        </div>
 
         <div>{{num.text}}</div>
 
@@ -19,10 +13,17 @@
             <a v-bind:href="hrefs" v-on:click="show">{{text}}</a>
         </div>
 
+        <div v-if="flag">
+            flag===true
+        </div>
+        <div v-else>
+            flag===false
+        </div>
+
         <script src="js/libs/vue.js"></script>
         <script>
 var v = new Vue({
-    el: "#tag",
+    el: "body",
     data: {
         num: {text: '1'},
         text: "百度",
@@ -30,7 +31,8 @@ var v = new Vue({
         show: function (e) {
             alert("页面不跳转");
             e.preventDefault();
-        }
+        },
+        flag: true
     }
 });
 
