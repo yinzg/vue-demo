@@ -9,7 +9,7 @@
         <input  v-on:blur="showAlert" type="text" value="提交"/>
         <a v-on:click.prevent="goto" href="http://www.baidu.com">百度</a>
 
-        <input  @keydown="showKey" type="text"/>
+        <input  v-on:keydown="showKey" type="text"/>
         <div id="key" ></div>
         <script src="js/libs/vue.js"></script>
 

@@ -3,7 +3,18 @@
         "template": {}
     },
     "attributes": {
+        "v-bind:class": {},
+        "v-if": {},
+        "v-on:blur": {},
+        "v-on:click": {},
+        "v-else": {},
+        "v-on:click.prevent": {},
         "v-for": {},
-        "id": {}
+        "@keydown": {
+            "context": "input"
+        },
+        "id": {},
+        "v-on:keydown": {},
+        "v-model": {}
     }
 }
