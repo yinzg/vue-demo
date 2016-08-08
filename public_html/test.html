@@ -11,8 +11,8 @@
             #circle{position: absolute;left: 50px;top:50px;width: 60px;height: 60px;margin-left: 5px;margin-top:5px;background-image: url(circle.png);background-repeat: no-repeat;background-size:contain;}
             #circle_light{position: absolute;left: 50px;top: 50px;width:50px;height: 50px;margin-left: 10.5px;margin-top:10.5px;background-image: url(circle-light.png);background-repeat: no-repeat;background-size:contain;z-index: 3;}
 
-            #circle_border{animation:img-rotate 5s linear infinite;-webkit-animation:img-rotate 5s linear infinite;-moz-animation:img-rotate 5s linear infinite;-ms-animation:img-rotate 5s linear infinite;}
-            #circle_light{animation:img-scale 2s linear infinite;-webkit-animation:img-scale 2s linear infinite;-moz-animation:img-scale 2s linear infinite;-ms-animation:img-scale 2s linear infinite;}
+            #circle_border{animation:img-rotate 5s linear infinite;-webkit-animation:img-rotate 5s linear infinite;-moz-animation:img-rotate 5s linear infinite;}
+            #circle_light{animation:img-scale 2s linear infinite;-webkit-animation:img-scale 2s linear infinite;-moz-animation:img-scale 2s linear infinite;}
             @-webkit-keyframes img-rotate{
                 0%{-webkit-transform:rotate(0deg);}
                 50%{-webkit-transform:rotate(180deg);}
@@ -22,11 +22,6 @@
                 0%{-moz-transform:rotate(0deg);}
                 50%{-moz-transform:rotate(180deg);}
                 100%{-moz-transform:rotate(360deg);}
-            }
-            @-ms-keyframes img-rotate{
-                0%{-ms-transform:rotate(0deg);}
-                50%{-ms-transform:rotate(180deg);}
-                100%{-ms-transform:rotate(360deg);}
             }
             @keyframes img-rotate{
                 0%{transform:rotate(0deg);}
@@ -42,11 +37,6 @@
                 0%{-moz-transform:scale(1);}
                 50%{-moz-transform:scale(1.2);}
                 100%{-moz-transform:scale(1);}
-            }
-            @-ms-keyframes img-scale{
-                0%{-ms-transform:scale(1);}
-                50%{-ms-transform:scale(1.2);}
-                100%{-ms-transform:scale(1);}
             }
             @keyframes img-scale{
                 0%{transform:scale(1);}
