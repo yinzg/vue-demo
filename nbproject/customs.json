@@ -1,6 +1,7 @@
 {
     "elements": {
-        "template": {}
+        "template": {},
+        "c-ul": {}
     },
     "attributes": {
         "v-bind:class": {},
@@ -15,6 +16,7 @@
         },
         "id": {},
         "v-on:keydown": {},
+        "v-bind:nums": {},
         "v-model": {}
     }
 }
